@@ -1,0 +1,9 @@
+.env
+checkpoints.sqlite
+checkpoints.sqlite-shm
+checkpoints.sqlite-wal
+chat_threads.json
+__pycache__/
+venv/
+.venv/
+My_Workspace.code-workspace
