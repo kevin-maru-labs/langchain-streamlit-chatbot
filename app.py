@@ -61,8 +61,9 @@ for msg in snapshot.values.get("messages", []):
             st.markdown(msg.content)
 
 if prompt := st.chat_input("Say something..."):
-    agent.invoke(
-        {"messages": [{"role": "user", "content": prompt}]},
-        config,
-    )
-    st.rerun()
+    with st.spinner("Thinking..."):
+        agent.invoke(
+            {"messages": [{"role": "user", "content": prompt}]},
+            config,
+        )
+        st.rerun()
