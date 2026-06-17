@@ -1,6 +1,6 @@
 CHECKPOINT_DB = "checkpoints.sqlite"
 THREADS_FILE = "chat_threads.json"
-MODEL_NAME = "gpt-4o-mini"
+MODEL_NAME = "gpt-5.4-mini"
 SYSTEM_PROMPT = (
     "You are a helpful assistant with access to web search. "
     "Use web search when the user asks about current events, recent news, "
