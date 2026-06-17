@@ -9,9 +9,6 @@ from threads import add_thread, load_threads
 load_dotenv()
 
 st.set_page_config(page_title="Memory Chatbot", layout="wide")
-st.divider()
-st.caption("Built by Kevin Maru")
-st.caption("[GitHub](https://github.com/kevin-maru-labs) · [LinkedIn](https://www.linkedin.com/in/kevinmaru/)")
 
 agent = get_agent()
 
@@ -25,6 +22,9 @@ if "thread_id" not in st.session_state:
         add_thread(st.session_state.thread_id)
 
 st.title(f"Chatbot with Memory: {st.session_state.thread_id[:8]}")
+st.divider()
+st.caption("Built by Kevin Maru")
+st.caption("[GitHub](https://github.com/kevin-maru-labs) · [LinkedIn](https://www.linkedin.com/in/kevinmaru/)")
 
 # Sidebar: new chat + thread picker
 with st.sidebar:
